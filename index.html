@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Car Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="ui">
+      <div id="speed">Speed: 0 km/h</div>
+      <div id="score">Distance: 0 m</div>
+      <button id="restartBtn">Restart</button>
+      <div id="help">WASD / Arrow keys to drive • Space to brake • Touch controls on mobile</div>
+    </div>
+
+    <div id="touchControls" aria-label="Touch controls">
+      <button class="touch" data-key="up">▲</button>
+      <div class="middleRow">
+        <button class="touch" data-key="left">◀</button>
+        <button class="touch" data-key="brake">■</button>
+        <button class="touch" data-key="right">▶</button>
+      </div>
+      <button class="touch" data-key="down">▼</button>
+    </div>
+
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
